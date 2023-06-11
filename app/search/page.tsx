@@ -3,12 +3,12 @@ import Header from "@/components/Header";
 import SearchInput from "@/components/SearchInput";
 import SearchContent from "./components/SearchContent";
 
+export const revalidate = 0;
 interface SearchProps {
   searchParams: {
     title: string;
   };
 }
-
 const Search = async ({ searchParams }: SearchProps) => {
   const songs = await getSongsByTitle(searchParams.title);
   return (
