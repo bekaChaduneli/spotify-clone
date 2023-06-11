@@ -40,7 +40,7 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
         className
       )}
     >
-      <div className="w-full md-4 flex items-center justify-between">
+      <div className="w-full mb-4 flex items-center justify-between">
         <div className="hidden md:flex gap-x-2 items-center">
           <button
             onClick={() => router.back()}
@@ -71,7 +71,7 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
                 Logout
               </Button>
               <Button
-                onClick={() => router.push("/account")}
+                // onClick={() => router.push("/account")}
                 className="bg-white"
               >
                 <FaUserAlt />
