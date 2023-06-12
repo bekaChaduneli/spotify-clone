@@ -29,16 +29,16 @@ export default async function RootLayout({
     return (
         <html lang="en">
             <body className={font.className}>
-                <SimpleBar style={{ maxHeight: 500 }}>
-                    <ToasterProvider />
-                    <SupabaseProvider>
-                        <UserProvider>
-                            <ModalProvider />
-                            <Sidebar songs={userSongs}>{children}</Sidebar>
-                            <Player />
-                        </UserProvider>
-                    </SupabaseProvider>
-                </SimpleBar>
+                {/* <SimpleBar style={{ maxHeight: 500 }}> */}
+                <ToasterProvider />
+                <SupabaseProvider>
+                    <UserProvider>
+                        <ModalProvider />
+                        <Sidebar songs={userSongs}>{children}</Sidebar>
+                        <Player />
+                    </UserProvider>
+                </SupabaseProvider>
+                {/* </SimpleBar> */}
             </body>
         </html>
     );
