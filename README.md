@@ -26,13 +26,13 @@ The main goal of the project was to create a website of songs where users can re
 -   Typescript
 -   SupaBase
 -   React
--   React hooks
-
+  
 ## Tools
 
 -   React-Icons
 -   RadixUi
 -   Uniqid
+-   React hooks
 -   Zustand
 -   UseSound
 -   ReactSpinners
